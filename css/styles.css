@@ -1,0 +1,249 @@
+/* Reset */
+HTML, BODY, DIV, SPAN, OBJECT, IFRAME, H1, H2, H3, H4, H5, H6, P, BLOCKQUOTE, PRE, ABBR, ADDRESS, CITE, CODE, DEL, DFN, EM, IMG, INS, KBD, Q, SAMP, SMALL, STRONG, SUB, SUP, VAR, B, I, DL, DT, DD, OL, UL, LI, FIELDSET, FORM, LABEL, LEGEND, TABLE, CAPTION, TBODY, TFOOT, THEAD, TR, TH, TD, ARTICLE, ASIDE, DIALOG, FIGURE, FOOTER, HEADER, HGROUP, MENU, NAV, SECTION, TIME, MARK, AUDIO, VIDEO {
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+	}
+
+ARTICLE, ASIDE, DIALOG, FIGURE, FOOTER, HEADER, HGROUP, NAV, SECTION {
+	display:block;
+	}
+
+BLOCKQUOTE, Q {
+	quotes:none;
+	}
+
+BLOCKQUOTE:before, BLOCKQUOTE:after, Q:before, Q:after {
+	content:'';
+	content:none;
+	}
+
+INS {
+	text-decoration:none;
+	}
+
+DEL {
+	text-decoration:line-through;
+	}
+
+ABBR[title], DFN[title] {
+	border-bottom:1px dotted;
+	cursor:help;
+	}
+
+TABLE {
+	border-collapse:collapse;
+	border-spacing:0;
+	}
+
+HR {
+	display:none;
+	}
+
+INPUT, SELECT {
+	vertical-align:middle;
+	}
+
+BODY {
+	font:100%/1.375 "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color:#333;
+	background:#FFF;
+	}
+
+/* Typography
+---------------------------------------- */
+DL,
+BLOCKQUOTE,
+HR,
+CODE,
+TABLE,
+P {
+	margin:0 0 1em;
+	}
+
+/* Links */
+A.t:link,
+A.t:visited {
+	padding:0.07em 0; /* fixing links in line-height gt 1.25 */
+	}
+
+A:link,
+.b-pseudo-link {
+	color:#0C56FF;
+	}
+
+A:visited {
+	color:#5C8EFF;
+	}
+
+A:link:hover,
+A:link:active,
+A:visited:hover,
+A:visited:active,
+.b-pseudo-link:hover {
+	color:#F00 !important;
+	}
+
+/* Links */
+.link {
+	cursor:pointer;
+	color:#0C56FF;
+	}
+
+.link:hover {
+	color:#F00;
+	}
+
+/* Headers (16/22 grid) */
+H1,
+H2,
+H3,
+H4,
+H5,
+H6 {
+	margin-left:-0.05454em !important;
+
+	font-family:Helvetica, Arial, sans-serif;
+	font-weight:normal;
+	}
+
+H1 {
+	padding:.2em 0;
+	font:2.5em/1.1em Helvetica, Arial, sans-serif;
+	margin:0 0 .5em;
+	}
+
+H2 {
+	margin:0 0 .35em;
+	font-size:1.5em;
+	line-height:1.1em;
+	}
+
+H3 {
+	margin:0 0 .3em;
+	font-size:1.25em;
+	line-height:1.375em;
+	}
+
+H4,
+H5,
+H6 {
+	margin:0 0 1.1em;
+	font-size:1.25em;
+	line-height:1.1em;
+	}
+
+/* For iOS fine zooming */
+LI,
+P {
+	padding-left:0;
+	margin-left:0;
+	}
+
+UL {
+	margin-bottom:1.375em;
+	}
+
+LI UL {
+	padding-left:1.375em;
+	}
+
+OL {
+	margin-bottom:1.375em;
+	}
+
+LI OL {
+	padding-left:1.375em;
+	}
+
+/* Layout
+---------------------------------------- */
+HTML, BODY {
+	width:100%;
+	height:100%;
+	}
+HTML {
+	display:table;
+	}
+BODY {
+	min-width:30em;
+	background:url("../img/bg-page.png");
+	box-sizing:border-box;
+	display:table-cell;
+	vertical-align:middle;
+	}
+
+.card {
+	background:#fff;
+	box-sizing:border-box;
+	padding:1em 2em;
+	width:30em;
+	max-width:100%;
+	margin:1em auto;
+	border:#ccc 1px solid;
+	box-shadow:0 0 10px rgba(0, 0, 0, 0.3)
+	}
+
+/* Blocks
+---------------------------------------- */
+
+.ico {
+	display:inline-block;
+	vertical-align:middle;
+	width:16px;
+	height:16px;
+	font:0/0 a;
+	text-indent:100%;
+	overflow:hidden;
+	margin:0 6px 0 0;
+	background:url("../img/icons.png") -9999px -9999px no-repeat;
+	}
+	.icon_type_email>.ico {
+		background-position:0 0;
+		}
+	.icon_type_skype>.ico {
+		background-position:0 -17px;
+	}
+	.icon_type_icq>.ico {
+		background-position:0 -51px;
+	}
+	.icon_type_twi>.ico {
+		background-position:0 -68px;
+	}
+	.icon_type_habr>.ico {
+		background-position:0 -85px;
+	}
+	.icon_type_moikrug>.ico {
+		background-position:0 -102px;
+	}
+	.icon_type_github>.ico {
+		background-position:0 -119px;
+	}
+	.icon_type_stackoverflow>.ico {
+		background-position:0 -136px;
+	}
+
+.contacts-list {
+	list-style:none;
+	}
+	.contacts-list__item {
+		margin:0 0 .3em;
+		}
+
+.social-list {
+	list-style:none;
+	}
+	.social-list__item {
+	margin:0 0 .3em;
+	}
+
+.copyrights {
+	font-size:.875em;
+	line-height:1.5714285714em;
+	color:#808080;
+	color:rgba(0, 0, 0, .5);
+	}

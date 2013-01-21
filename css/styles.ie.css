@@ -1,0 +1,13 @@
+.ico {
+	text-indent:0;
+	}
+a.icon {
+	zoom:1;
+	}
+a.icon>.ico {
+	cursor:pointer;
+	}
+.card {
+	position:relative;
+	top:50px;
+	}
